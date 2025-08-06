@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 10:29:37 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/06 12:39:27 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/06 13:34:42 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 	int m;
 	int *div;
 	int *mod;
-	// I cant create pointers pointing to something,
+	// I cant declare pointers that are already pointing to something,
 	// first I need to create a variable(int var),
 	// then create a pointer(int *ptr) and
 	// then point(reference) pointer to variable location.
@@ -39,7 +39,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 	div = &d; // referencing variable with a pointer
 	mod = &m;
 	ft_div_mod(x, y, div, mod); 
-	// we pass pointers as regular variables? no need for extra stuff here
+	// we pass pointers as regular variables, no need for extra stuff here
 	write(1, &div, 2);
 	write(1, &mod, 2); 
 	//we are showing gibberish because we cant show 

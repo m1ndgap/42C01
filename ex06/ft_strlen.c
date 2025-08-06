@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/06 12:41:57 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/06 13:05:03 by tchumbas         ###   ########.fr       */
+/*   Created: 2025/08/06 13:48:25 by tchumbas          #+#    #+#             */
+/*   Updated: 2025/08/06 14:01:43 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
+/* #include <stdio.h>
+#include <unistd.h> */
 
-void	ft_putstr(char *str)
+int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
-	{
-		write(1, &str[i], 1);
+	while (str[i] != '\0')
 		i++;
-	}
+	return (i);
 }
- 
-int	main(void)
+
+/* int	main(void)
 {
 	char *str;
-	str = "I'm a string LOL";
-	ft_putstr(str);
-}
+	int len;
+
+	str = "poweroverwhelming";
+	len = ft_strlen(str);
+	printf("%d", len);
+} */
