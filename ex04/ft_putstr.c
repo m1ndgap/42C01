@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/04 13:13:59 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/06 10:14:43 by tchumbas         ###   ########.fr       */
+/*   Created: 2025/08/06 12:41:57 by tchumbas          #+#    #+#             */
+/*   Updated: 2025/08/06 12:42:55 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include <unistd.h>
 
-void	ft_ft(int *nbr)
-{
-	*nbr = 42;
+void	ft_putstr(void){
+	
 }
-
-/* int	main(void)
-{
-	int	x;
-
-	x = 0;
-	ft_ft(&x);
-	write(1, &x, 1);
-} */

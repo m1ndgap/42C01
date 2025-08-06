@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/04 13:13:59 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/06 10:14:43 by tchumbas         ###   ########.fr       */
+/*   Created: 2025/08/06 10:29:37 by tchumbas          #+#    #+#             */
+/*   Updated: 2025/08/06 11:18:38 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_ft(int *nbr)
+void	ft_swap(int *a, int *b)
 {
-	*nbr = 42;
+	int	swap;
+
+	swap = *a;
+	*a = *b;
+	*b = swap;
 }
 
 /* int	main(void)
 {
 	int	x;
+	int	y;
 
-	x = 0;
-	ft_ft(&x);
+	x = 42;
+	y = 69;
+	ft_swap(&x, &y);
 	write(1, &x, 1);
+	write(1, &y, 1);
 } */

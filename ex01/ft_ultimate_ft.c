@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/04 13:13:59 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/06 10:14:43 by tchumbas         ###   ########.fr       */
+/*   Created: 2025/08/06 10:18:43 by tchumbas          #+#    #+#             */
+/*   Updated: 2025/08/06 10:28:40 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_ft(int *nbr)
+void	ft_ultimate_ft(int *********nbr)
 {
-	*nbr = 42;
+	*********nbr = 42;
 }
 
 /* int	main(void)
 {
-	int	x;
-
-	x = 0;
-	ft_ft(&x);
-	write(1, &x, 1);
+	int	fortytwo = 0;
+	int	*ptr1 = &fortytwo;
+	int	**ptr2 = &ptr1;
+	int	***ptr3 = &ptr2;
+	int	****ptr4 = &ptr3;
+	int *****ptr5 = &ptr4;
+	int	******ptr6 = &ptr5;
+	int	*******ptr7 = &ptr6;
+	int	********ptr8 = &ptr7;
+	int	*********ptr9 = &ptr8;
 } */
