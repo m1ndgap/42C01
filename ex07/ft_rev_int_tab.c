@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 14:04:04 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/06 18:00:31 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/06 18:08:07 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int	tabswap[size];
-	int	i;
+	int tabswap[size];
+	int i;
 
 	printf("%s", "Original tab");
 	printf("%s", " \n");
@@ -33,16 +33,21 @@ void	ft_rev_int_tab(int *tab, int size)
 	i = 0;
 	while (size > 0)
 	{
-		tabswap[i] = tab[size-1];
+		tabswap[i] = tab[size - 1];
 		printf("%s", "Current values:");
 		printf("tabswap %d ", tabswap[i]);
 		printf(" \t%d", i);
 		printf("%s", "\t | \t");
-		printf("tab %d", tab[size-1]);
-		printf(" \t%d", size-1);
+		printf("tab %d", tab[size - 1]);
+		printf(" \t%d", size - 1);
 		printf("%s", " \n");
 		size--;
 		i++;
+	}
+	while (size < i)
+	{
+		tabswap[i] = tab[i];
+		i--;
 	}
 	printf("%s", "Tab inverted");
 	printf("%s", " \n");
@@ -57,7 +62,7 @@ void	ft_rev_int_tab(int *tab, int size)
 	printf("%d", tab[4]);
 }
 
-int	main(void)
+int main(void)
 {
 	int size;
 	size = 5;
