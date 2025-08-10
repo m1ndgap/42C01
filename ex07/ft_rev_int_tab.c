@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 14:04:04 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/10 11:48:27 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/10 11:51:30 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	ft_rev_int_tab(int *tab, int size)
 		tabswap[3], tab[4], tabswap[4]);
 	while (size < i)
 	{
-		tabswap[size] = tab[size];
+		tab[size] = tabswap[size];
 		printf("%d %d\n", size, i);
 		write(1, &size, 1);
 		write(1, &i, 1);
