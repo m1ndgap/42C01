@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 14:04:04 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/06 19:18:02 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/10 11:48:27 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,51 +18,32 @@ void	ft_rev_int_tab(int *tab, int size)
 	int	tabswap[size];
 	int	i;
 
-	printf("%s", "------------\n| Original tab |\n-----------\n");
-	printf("%s", " \n");
-	printf("%d", tab[0]);
-	printf("%s", " \n");
-	printf("%d", tab[1]);
-	printf("%s", " \n");
-	printf("%d", tab[2]);
-	printf("%s", " \n");
-	printf("%d", tab[3]);
-	printf("%s", " \n");
-	printf("%d", tab[4]);
-	printf("%s", " \n\n\n");
+	printf("------------\n| Original tab |\n-----------\n\n[0] %d\n[1] %d\n[2] %d\n[3] %d\n[4] %d\n\n", tab[0], tab[1], tab[2], tab[3], tab[4]);
 	i = 0;
 	while (size > 0)
 	{
-		printf("%s", "Current values:");
-		printf("tabswap %d ", tabswap[i]);
-		printf(" \t%d", i);
-		printf("%s", "\t | \t");
-		printf("tab %d", tab[size - 1]);
-		printf(" \t%d", size - 1);
+		printf("Initial values:\ttabswap\t %d \t%d| \ttab %d\t%d\n", tabswap[i],
+			i, tab[size - 1], size - 1);
 		tabswap[i] = tab[size - 1];
-		printf("%s", " \n-----SWAP-----\n");
-		printf("%s", "Current values:");
-		printf("tabswap %d ", tabswap[i]);
-		printf(" \t%d", i);
-		printf("%s", "\t | \t");
-		printf("tab %d", tab[size - 1]);
-		printf(" \t%d", size - 1);
-		printf("%s", "\n-----END-----\n\n\n");
+		printf("Swapped values:\ttabswap\t %d \t%d| \ttab %d\t%d\n\n",
+			tabswap[i], i, tab[size - 1], size - 1);
 		size--;
 		i++;
 	}
-	printf("%s", "--------------\n| Tab inverted |\n-----------\n");
+	printf("------------\n| Original tab + Populated swap |\n-----------\n\n[0] %d | %d\n[1] %d | %d\n[2] %d | %d\n[3] %d | %d\n[4] %d | %d\n\n",
+		tab[0], tabswap[0], tab[1], tabswap[1], tab[2], tabswap[2], tab[3],
+		tabswap[3], tab[4], tabswap[4]);
 	while (size < i)
 	{
 		tabswap[size] = tab[size];
+		printf("%d %d\n", size, i);
+		write(1, &size, 1);
+		write(1, &i, 1);
 		size++;
-		printf("[0] - %d\n", tab[0]);
-		printf("[1] - %d\n", tab[1]);
-		printf("[2] - %d\n", tab[2]);
-		printf("[3] - %d\n", tab[3]);
-		printf("[4] - %d\n", tab[4]);
-		printf("%s", "\n-------------\n\n");
 	}
+	printf("------------\n| Swapped tab |\n-----------\n\n[0] %d\n[1] %d\n[2] %d\n[3] %d\n[4] %d\n\n", tab[0], tab[1], tab[2], tab[3], tab[4]);
+	while (size < i)
+		;
 }
 
 int	main(void)

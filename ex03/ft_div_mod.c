@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 10:29:37 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/06 13:34:42 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/07 14:56:43 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 	*mod = a % b;
 }
 
-/* int	main(void)
+int	main(void)
 {
 	int x;
 	int y;
@@ -48,4 +48,4 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 	write(1, "\n", 2);
 	printf("%d", *div);
 	printf("%d", *mod);
-} */
+}
